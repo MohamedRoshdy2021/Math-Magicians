@@ -1,27 +1,111 @@
-body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.parentdiv {
+  border: 1px solid black;
+  height: 396px;
+  width: 400px;
+  position: relative;
+  margin: 5rem auto 0;
+  border-radius: 12px;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.math-opertion-right {
+  position: absolute;
+  width: 80px;
+  left: 320px;
+  margin: 0;
+  padding: 0;
+  top: 61px;
+  bottom: 0;
+  background-color: orange;
+  border-radius: 0 0 12px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.math-o-right {
+  height: 66.2px;
+  width: 80px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+}
+
+.math-o-right:last-child {
+  border: none;
+}
+
+.nav {
+  width: 400px;
+  height: 61px;
+  text-align: right;
+  background-color: gray;
+  border-radius: 12px 12px 0 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.nav-p {
+  padding-right: 1rem;
+}
+
+.math-opertion-top {
+  width: 320.3px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  top: 61px;
+}
+
+.math-o-top {
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  width: 100%;
+  height: 66px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.math-numbers-con {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr auto;
+  top: 128px;
+  left: 0;
+  width: 320px;
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 0 0 0 12px;
+}
+
+.math-number {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  bottom: 0;
+  height: 66.1px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.math-number:nth-child(10) {
+  grid-column: 2;
+  border-bottom: none;
+  padding-right: 96px;
 }
