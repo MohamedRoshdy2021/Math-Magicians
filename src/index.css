@@ -1,3 +1,7 @@
+body {
+  background-color: beige;
+}
+
 .parentdiv {
   border: 1px solid black;
   height: 396px;
@@ -102,6 +106,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .math-number:nth-child(10) {

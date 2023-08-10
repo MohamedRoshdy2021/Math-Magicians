@@ -16,11 +16,11 @@ function Calucaltor() {
 function MathRight() {
   return (
     <div className="math-opertion-right">
-      <p className="math-o-right">1</p>
-      <p className="math-o-right">1</p>
-      <p className="math-o-right">1</p>
-      <p className="math-o-right">1</p>
-      <p className="math-o-right">1</p>
+      <p className="math-o-right">÷</p>
+      <p className="math-o-right">*</p>
+      <p className="math-o-right">-</p>
+      <p className="math-o-right">+</p>
+      <p className="math-o-right">=</p>
     </div>
   );
 }
@@ -28,9 +28,9 @@ function MathRight() {
 function MathTop() {
   return (
     <div className="math-opertion-top">
-      <p className="math-o-top">1</p>
-      <p className="math-o-top">1</p>
-      <p className="math-o-top">1</p>
+      <p className="math-o-top">AC</p>
+      <p className="math-o-top">+/-</p>
+      <p className="math-o-top">%</p>
     </div>
   );
 }
