@@ -115,3 +115,20 @@ body {
   padding-right: 96px;
   cursor: pointer;
 }
+
+.qoute-loading {
+  margin: 4rem auto 0;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.qoute {
+  margin: 4rem auto 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: orangered;
+}
+
+ul {
+  list-style: none;
+}

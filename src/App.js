@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import Calculator from './components/Calculator';
+import Api from './components/FetchAPI';
 
 class App extends Calculator {
   constructor(props) {
@@ -10,7 +11,10 @@ class App extends Calculator {
 
   render() {
     return (
-      <Calculator />
+      <>
+        <Calculator />
+        <Api />
+      </>
     );
   }
 }
