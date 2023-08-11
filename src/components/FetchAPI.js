@@ -32,7 +32,6 @@ export default function Api() {
     return (
       <div className="qoute-loading">
         Error: cant get the data from api
-        {error.message}
       </div>
     );
   }
