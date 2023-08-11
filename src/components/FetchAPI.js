@@ -1,16 +1,11 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export default class DataFetchingComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: true,
-      error: null,
-      data: [],
-    };
-  }
+export default function Api() {
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [data, setData] = useState([]);
 
-  componentDidMount() {
+  useEffect(() => {
     fetch('https://api.api-ninjas.com/v1/quotes?category=dating', {
       method: 'GET',
       headers: {
@@ -20,44 +15,36 @@ export default class DataFetchingComponent extends Component {
     })
       .then((res) => res.json())
       .then((data) => {
-        this.setState({
-          loading: false,
-          data,
-        });
+        setLoading(false);
+        setData(data);
       })
       .catch((error) => {
-        this.setState({
-          loading: false,
-          error,
-        });
+        setLoading(false);
+        setError(error);
       });
+  }, []);
+
+  if (loading) {
+    return <div className="qoute-loading">please wait while Loading...</div>;
   }
 
-  render() {
-    const { loading, error, data } = this.state;
-
-    if (loading) {
-      return <div className="qoute-loading"> please wait while Loading...</div>;
-    }
-
-    if (error) {
-      return (
-        <div className="qoute-loading">
-          error:404 Cant get the data from the api
-          {error.message}
-        </div>
-      );
-    }
-
+  if (error) {
     return (
-      <div className="qoute">
-        <h2>Quote of the day</h2>
-        <ul>
-          {data.map((quot) => (
-            <li key={1}>{quot.quote}</li>
-          ))}
-        </ul>
+      <div className="qoute-loading">
+        Error: cant get the data from api
+        {error.message}
       </div>
     );
   }
+
+  return (
+    <div className="qoute">
+      <h2>Quote od the day</h2>
+      <ul>
+        {data.map((q) => (
+          <li key={1}>{q.quote}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import Calculator from './components/Calculator';
-import DataFetchingComponent from './components/FetchAPI';
+import Api from './components/FetchAPI';
 
 class App extends Calculator {
   constructor(props) {
@@ -13,7 +13,7 @@ class App extends Calculator {
     return (
       <>
         <Calculator />
-        <DataFetchingComponent />
+        <Api />
       </>
     );
   }
