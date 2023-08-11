@@ -1,13 +1,18 @@
 import React from 'react';
 import './index.css';
-import Calucaltor from './components/Calculator';
+import Calculator from './components/Calculator';
 
-function App() {
-  return (
-    <>
-      <Calucaltor />
-    </>
-  );
+class App extends Calculator {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <Calculator />
+    );
+  }
 }
 
 export default App;
