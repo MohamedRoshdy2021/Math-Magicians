@@ -1,5 +1,18 @@
-body {
-  background-color: beige;
+a {
+  text-decoration: none;
+}
+
+.div-cont {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 88%;
+  margin-top: 8rem;
+}
+
+.Math-h3 {
+  font-size: 2rem;
+  padding-left: 15%;
 }
 
 .parentdiv {
@@ -7,7 +20,6 @@ body {
   height: 396px;
   width: 400px;
   position: relative;
-  margin: 5rem auto 0;
   border-radius: 12px;
 }
 
@@ -120,15 +132,49 @@ body {
   margin: 4rem auto 0;
   text-align: center;
   font-size: 1.25rem;
+  color: #9e0059;
+  width: 70%;
 }
 
 .qoute {
   margin: 4rem auto 0;
   text-align: center;
   font-size: 1.5rem;
-  color: orangered;
+  color: #9e0059;
+  width: 70%;
 }
 
 ul {
   list-style: none;
+}
+
+.nav-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #390099;
+}
+
+.nav-app nav {
+  margin-left: 8%;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  margin-right: 6%;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+
+.home {
+  width: 80%;
+  margin: 6rem auto 0;
+  font-style: italic;
+}
+
+.home p {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
 }

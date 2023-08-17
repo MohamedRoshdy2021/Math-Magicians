@@ -38,7 +38,7 @@ export default function Api() {
 
   return (
     <div className="qoute">
-      <h2>Quote od the day</h2>
+      <h2>Quote of the day</h2>
       <ul>
         {data.map((q) => (
           <li key={1}>{q.quote}</li>
