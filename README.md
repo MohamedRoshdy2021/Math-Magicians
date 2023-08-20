@@ -69,9 +69,9 @@
 
 <!-- LIVE DEMO -->
 
-## live demo <a name="livelink">Coming Soon</a>
+## live demo <a name="livelink"></a>
 
-- coming soon
+- https://math-magic-emk3.onrender.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
